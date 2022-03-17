@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { HomeNavComponent } from './home-nav/home-nav.component';
 
 @NgModule({
   imports: [
@@ -15,21 +16,19 @@ import { HomePageComponent } from './home-page/home-page.component';
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'w3css', component: HomePageComponent },
-
-    ])
+      { path: 'w3css/:id', component: HomePageComponent },
+    ]),
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    HomePageComponent
+    HomePageComponent,
+    HomeNavComponent,
   ],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
 
 /*
 Copyright Google LLC. All Rights Reserved.
