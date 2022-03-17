@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HomeNavComponent } from './home-nav/home-nav.component';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { HomeNavComponent } from './home-nav/home-nav.component';
     ProductListComponent,
     HomePageComponent,
     HomeNavComponent,
+    ProductAlertsComponent,
   ],
   bootstrap: [AppComponent],
 })
